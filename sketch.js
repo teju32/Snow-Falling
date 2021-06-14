@@ -2,6 +2,7 @@ var bg;
 var snowflakeImg;
 var snowflake;
 var snowflakeBody;
+var snowman,girl;
 
 const Engine = Matter.Engine;
 const World = Matter.World;
@@ -12,6 +13,8 @@ function preload(){
   
   bg=loadImage("snow1.jpg");
   snowflakeImg = loadImage("snow4.webp");
+  girl=loadImage("girl.png");
+  snowman=loadImage("snowman.png");
 }
 
 function setup() {
@@ -35,6 +38,8 @@ function setup() {
 
 function draw() {
   background(bg); 
+  image(girl ,150,120,200,300);
+  image(snowman,460,120,200,300);
   snowflake.x= snowflakeBody.position.x 
   snowflake.y= snowflakeBody.position.y 
   
